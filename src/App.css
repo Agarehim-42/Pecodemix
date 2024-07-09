@@ -1,0 +1,68 @@
+:root {
+    --header-left:#0a121f;
+    --header-right:#0a111f;
+    --introduction-left:#08101e;
+    --introduction-right:#09111f;
+
+}
+
+.logo {
+    width: 200px;
+}
+
+
+.artificial-btn {
+    background: #3A68B8;
+    width: 112px;
+    height: 45px;
+    border-radius: 5px;
+    color: #fff;
+    border-color: transparent;
+
+}
+
+.introduction-bg-color {
+
+    background: linear-gradient(to right , var(--introduction-left) , var(--introduction-right));
+
+}
+
+.my-background {
+    background:linear-gradient(to right , var(--header-left), var(--header-right))
+}
+
+.Loremp {
+    opacity: 0.5;
+}
+
+.sign-in , .get-started , .watch-video {
+    background-color: #3A68B8;
+    color: #fff;
+    border-color: transparent; 
+    border-radius: 2px;
+}
+
+.sign-in {
+
+width: 112px;
+height: 52px;
+}
+
+.get-started {
+
+width: 171px;
+height: 57px;
+}
+
+.watch-video {
+
+width: 217px;
+height: 57px;
+}
+
+
+@media(min-width:768px) {
+    .logo {
+        width: 300px;
+    }
+}
