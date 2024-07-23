@@ -1,8 +1,12 @@
 import React from 'react'
 
-const shirket:React.FC = () => {
+interface ShirketProps {
+    shirketinlogosu:string 
+}
+
+const shirket:React.FC<ShirketProps> = ({shirketinlogosu}) => {
     return (
-        <div>shirket</div>
+<img className='img-fluid' src={shirketinlogosu} alt="" />
     )
 }
 

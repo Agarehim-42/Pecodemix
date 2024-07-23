@@ -1,8 +1,9 @@
 :root {
-    --header-left:#0a121f;
-    --header-right:#0a111f;
-    --introduction-left:#08101e;
-    --introduction-right:#09111f;
+    --header-left: #0a121f;
+    --header-right: #0a111f;
+    --introduction-left: #08101e;
+    --introduction-right: #09111f;
+    --award-card: #0e1623;
 
 }
 
@@ -21,48 +22,307 @@
 
 }
 
+.mobile-menu {
+    height: 100v;
+    width: 0;
+    position: fixed;
+    background-color: rgb(0, 0, 0, .6);
+    overflow-x: hidden;
+    z-index: 99999;
+    transition: all 0.5s linear;
+
+}
+
+.mobile-menu.aktiv {
+    width: 100%;
+
+}
+
+.mobile-menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px;
+
+}
+
+.close-icon {
+    position: absolute;
+    z-index: 99999;
+    right: 40px;
+    top: 40px;
+    font-size: 40px;
+}
+
+.mobile-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.introduction {
+    padding-top: 10px;
+}
+
 .introduction-bg-color {
 
-    background: linear-gradient(to right , var(--introduction-left) , var(--introduction-right));
+    background: linear-gradient(to right, var(--introduction-left), var(--introduction-right));
 
 }
 
 .my-background {
-    background:linear-gradient(to right , var(--header-left), var(--header-right))
+    background: linear-gradient(to right, var(--header-left), var(--header-right))
 }
 
 .Loremp {
     opacity: 0.5;
 }
 
-.sign-in , .get-started , .watch-video {
+.sign-in, .get-started, .watch-video, .learn-more {
     background-color: #3A68B8;
     color: #fff;
-    border-color: transparent; 
+    border-color: transparent;
     border-radius: 2px;
 }
 
 .sign-in {
 
-width: 112px;
-height: 52px;
+    width: 112px;
+    height: 52px;
 }
 
 .get-started {
 
-width: 171px;
-height: 57px;
+    width: 171px;
+    height: 57px;
 }
 
 .watch-video {
 
-width: 217px;
-height: 57px;
+    width: 217px;
+    height: 57px;
 }
+
+.shirketswiper img {
+    height: 87px;
+}
+
+.shirketlerbgcolor {
+    background-color: #09111e;
+    padding-top: 70px;
+}
+
+.deep-learning {
+    padding-top: 90px;
+    background: linear-gradient(to right, var(--header-left), var(--header-right))
+}
+
+.learn-more {
+    width: 150px;
+    height: 52px;
+}
+
+.deepparag {
+    opacity: 0.6;
+}
+
+.Awardsection {
+    background: linear-gradient(to right, var(--header-left), var(--header-right));
+}
+
+.award-card {
+    background-color: #101725;
+    padding: 35px;
+}
+
+
+.awardimg {
+    width: 120px;
+    /* height: 69px; */
+    display: block;
+    margin: 30px auto;
+}
+
+.Awardsection .swiper-pagination-bullet-active {
+    color: #fff;
+    background-color: aliceblue;
+}
+
+.Awardsection .swiper-pagination-bullet {
+    background: rgb(219, 255, 0);
+    background: linear-gradient(90deg, rgba(219, 255, 0, 1) 0%, rgba(0, 224, 255, 1) 100%);
+    width: 15px;
+    height: 15px;
+
+}
+
+.client-section {
+    background: linear-gradient(to right, var(--header-left), var(--header-right));
+}
+
+.client-section p {
+    opacity: .6;
+}
+
+.Aboutbg, .Blogbg, .Servicesbg {
+    background: linear-gradient(to bottom, var(--header-left), var(--header-right));
+
+    height: 100vh;
+}
+
+
+
+
+.footbg {
+    background-color: #070e1c;
+}
+
+.footbg h6 {
+    color: #9c9fa5;
+}
+
+.Notfound {
+    background: linear-gradient(to right, var(--introduction-left), var(--introduction-right));
+    height: 100vh;
+
+}
+
+
+
+.Erorh1 {
+    color: #3A68B8;
+}
+
+
+.contact-form {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, var(--header-left), var(--header-right));
+}
+
+form input, form textarea {
+    background-color: transparent !important;
+    border-color: transparent !important;
+    border-bottom: 1px solid #dedede !important;
+    resize: none;
+    color: #fff !important;
+}
+
+::placeholder {
+    color: #fff !important;
+    opacity: 1;
+    /* Firefox */
+}
+
+:focus::-webkit-input-placeholder {
+color: #3A68B8 !important;
+transition: opacity 2.5 ease;
+}
+
+.Blog-bg-color {
+    background: linear-gradient(to bottom, var(--header-left), var(--header-right));
+    height: 100vh;
+}
+
+
+  
+
+
+@media(min-width:320px) , (max-width:500px) {
+    .about-bg-color , .Services-bg-color      {
+        background: linear-gradient(to bottom, var(--header-left), var(--header-right));
+        height: 160vh;
+} 
+}
+
+
+
+
+
+
+
 
 
 @media(min-width:768px) {
     .logo {
         width: 300px;
     }
+
+    .mobile-menu a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 50px;
+
+    }
+
+    .close-icon {
+        position: absolute;
+        z-index: 99999;
+        right: 40px;
+        top: 40px;
+        font-size: 60px;
+    }
+
+    .about-bg-color , .Services-bg-color , .Blog-bg-color    {
+        background: linear-gradient(to bottom, var(--header-left), var(--header-right));
+        height: 95vh;
+        /* width: 100%; */
+    }
+    
+
+    form {
+        width: 503px;
+        background-color: #070e1c;
+        box-shadow: 10px 20px 30px rgba(255, 255, 255, .6);
+        padding: 30px;
+
+
+    }
+
+ 
+
+}
+
+@media(min-width:992px) {
+    .deeph2 {
+        font-size: 51px;
+    }
+
+    .about-stores .img-global {
+        width: 13px;
+        padding-top: 8px;
+    }
+
+
+
+    .about-stores .img-yes {
+        width: 13px;
+        padding-top: 8px;
+    }
+
+    .informations {
+        margin-left: 30px;
+    }
+
+    .menus {
+        margin-left: 15px;
+    }
+
+    .useful-links {
+        margin-left: 15px;
+    }
+
+    .about-stores {
+        margin-left: 10px;
+    }
+
+    .kosmonaft {
+        width: 600px !important;
+    }
+
+
 }
